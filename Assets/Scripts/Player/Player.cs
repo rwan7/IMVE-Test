@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,6 +15,7 @@ public class Player : MonoBehaviour
     [Header("Player State")]
     public bool isGrounded;
     public int jumpCount;
+    public float health = 100f;
 
     [Header("Attack Settings")]
     public float attackRange = 1f;
@@ -169,5 +171,10 @@ public class Player : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position + transform.forward * attackRange, attackRange);
+    }
+
+    internal void TakeDamage(float damage)
+    {
+        health -= damage;
     }
 }
