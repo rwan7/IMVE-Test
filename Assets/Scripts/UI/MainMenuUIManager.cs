@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using System.Collections;
 using TMPro;
 using UnityEngine.UI;
 
@@ -14,13 +13,22 @@ public class MainMenuUIManager : MonoBehaviour
     public Toggle soundToggle;
     public Toggle musicToggle;
 
+    [Header("UI Elements")]
+    public TextMeshProUGUI highestTimeText; 
+
+    private SaveManager saveManager;
+
     void Start()
     {
+        saveManager = new SaveManager();
+
         soundToggle.isOn = PlayerPrefs.GetInt("SoundEnabled", 1) == 1;
         musicToggle.isOn = PlayerPrefs.GetInt("MusicEnabled", 1) == 1;
 
         soundToggle.onValueChanged.AddListener(ToggleSound);
         musicToggle.onValueChanged.AddListener(ToggleMusic);
+
+        HighestScore();
     }
 
     public void ToggleSound(bool isOn)
@@ -74,4 +82,11 @@ public class MainMenuUIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
+    private void HighestScore()
+    {
+        float highestTime = saveManager.LoadHighestTimeSurvived();
+        highestTimeText.text = "Highest Time Survived : " + highestTime.ToString("F2") + " seconds";
+    }
+
 }

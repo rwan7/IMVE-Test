@@ -195,6 +195,9 @@ public class UIManager : MonoBehaviour
             inGameUI.SetActive(false);
             gameOverUI.SetActive(true);
             StartCoroutine(FadeInText());
+
+            SaveManager saveManager = new SaveManager();
+            saveManager.SaveTimeSurvived(timeSurvived);
         }
     }
 
@@ -208,13 +211,7 @@ public class UIManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-    }
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // Stop all SFX whenever a scene is loaded
-        AudioManager.Instance.StopSFX();
-        AudioManager.Instance.StopLoopingSFX(); // To stop looping sounds like walking
-    }    
+    }   
 
     private IEnumerator FadeInText()
     {
