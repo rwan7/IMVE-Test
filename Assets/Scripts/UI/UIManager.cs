@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -35,7 +36,6 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
         }
         else
         {
@@ -111,6 +111,19 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void PlayGame()
+    {
+        AudioManager.Instance.PlayClickSFX();
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+
+        CursorLock();
+    }
+
+    public void QuitGame()
+    {
+        AudioManager.Instance.PlayClickSFX();
+        Application.Quit();
+    }
     public void PauseGame()
     {
         AudioManager.Instance.PlayPausedSFX();
@@ -155,6 +168,7 @@ public class UIManager : MonoBehaviour
         
         Time.timeScale = 1;
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        
     }
     
     public void RestartButton()
@@ -170,6 +184,7 @@ public class UIManager : MonoBehaviour
     public void GameOver()
     {
         AudioManager.Instance.PlayGameOverSFX();
+        
         isAlive = false;
         EnemyPool.Instance.StopSpawning();
 
@@ -194,6 +209,12 @@ public class UIManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Stop all SFX whenever a scene is loaded
+        AudioManager.Instance.StopSFX();
+        AudioManager.Instance.StopLoopingSFX(); // To stop looping sounds like walking
+    }    
 
     private IEnumerator FadeInText()
     {

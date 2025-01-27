@@ -21,7 +21,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip clickSound;
     public AudioClip pausedSound;
     public AudioClip gameOverSound;
-    public AudioClip enemyGrowlSound;
 	
     private void Awake()
     {
@@ -54,7 +53,6 @@ public class AudioManager : MonoBehaviour
     public void PlayClickSFX() { PlaySFX(clickSound); }
     public void PlayPausedSFX() { PlaySFX(pausedSound); }
     public void PlayGameOverSFX() { PlaySFX(gameOverSound); }
-    public void PlayEnemyGrowlSFX() { PlaySFX(enemyGrowlSound); }
     public void PlayJumpSFX() { PlaySFX(jumpSound); }
     public void PlayWalkingSFX() { PlayLoopingSFX(walkingSound); }
     public void PlayEnemyWalkSFX() { PlayLoopingSFX(enemyWalkSound); }
@@ -71,6 +69,10 @@ public class AudioManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+            if (AudioManager.Instance.SFXSource.clip == AudioManager.Instance.enemyWalkSound && AudioManager.Instance.SFXSource.isPlaying)
+    {
+        AudioManager.Instance.StopLoopingSFX();
+    }
         switch (scene.name)
         {
             case "Main Menu":
@@ -89,7 +91,6 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = true; 
         musicSource.Play();
     }
-
 	
 	public void StopSFX()
 	{
@@ -104,10 +105,12 @@ public class AudioManager : MonoBehaviour
         SFXSource.Play();
     }
 
-
 	public void StopLoopingSFX()
 	{
-		SFXSource.loop = false;
-		SFXSource.Stop();
+        if (SFXSource.isPlaying && SFXSource.loop)
+        {
+            SFXSource.loop = false;
+            SFXSource.Stop();
+        }
 	}
 }

@@ -13,7 +13,6 @@ public class Enemy : MonoBehaviour
     private Animator animator;
 
     private bool isChasing = false;
-    private bool hasGrowled = false; // for growl sound effect
 
     void Start()
     {
@@ -29,42 +28,40 @@ public class Enemy : MonoBehaviour
 
     private void CheckState()
     {
-       float distance = Vector3.Distance(transform.position, player.position);
+        float distance = Vector3.Distance(transform.position, player.position);
 
         if (distance <= detectionRange)
         {
             if (!isChasing)
             {
                 isChasing = true;
-                if (!hasGrowled)
-                {
-                    AudioManager.Instance.PlayEnemyGrowlSFX();
-                    hasGrowled = true; // Ensure growl sound is only played once
-                }
             }
         }
         else
         {
             isChasing = false;
-            hasGrowled = false;
         }
 
         if (isChasing)
         {
             agent.SetDestination(player.position);
             animator.SetBool("IsWalking", true);
-            
-            if (!AudioManager.Instance.SFXSource.isPlaying || 
-                AudioManager.Instance.SFXSource.clip != AudioManager.Instance.enemyWalkSound)
+
+            if (agent.velocity.magnitude > 0.1f) 
             {
-                AudioManager.Instance.PlayEnemyWalkSFX();
+                AudioManager.Instance.PlayEnemyWalkSFX(); 
             }
         }
         else
         {
             animator.SetBool("IsWalking", false);
-        }    
-    }
+            if (AudioManager.Instance.SFXSource.isPlaying && AudioManager.Instance.SFXSource.clip == AudioManager.Instance.enemyWalkSound)
+            {
+                AudioManager.Instance.StopLoopingSFX();
+            }
+        }
+    }                            
+
 
     void OnTriggerEnter(Collider col)
     {
