@@ -7,28 +7,14 @@ public class Player : MonoBehaviour
 {
     [Header("Player Movement Settings")]
     public float speed = 3.0f;
-    public float jumpForce = 5.0f;
-    public float gravity = -9.81f;
-    public float fallMultiplier = 2.5f;
-    public float lowJumpMultiplier = 2.0f;
-
-    [Header("Player State")]
-    public bool isGrounded;
-    public int jumpCount;
-    public float health = 100f;
-
-    [Header("Attack Settings")]
-    public float attackRange = 1f;
-    public float attackDamage = 50f;
-    public float attackCooldown = 0.8f;
-    private bool canAttack = true;
+    public float jumpForce = 1.0f;
+    public float gravity = -14f;
 
     [Header("Camera")]
     public Camera cam;
     public float sensitivity;
 
     private CharacterController controller;
-    private Animator animator;
     private Vector3 direction;
     private Vector3 velocity;
     private float xRotation = 0f;
@@ -39,7 +25,6 @@ public class Player : MonoBehaviour
     {
         inputActions = new InputSystem_Actions();
         controller = GetComponent<CharacterController>();
-        animator = GetComponentInChildren<Animator>();
         lockCursor();
     }
 
@@ -53,7 +38,6 @@ public class Player : MonoBehaviour
         inputActions.Enable();
         inputActions.Player.Jump.performed += OnJump;
         inputActions.Player.Look.performed += OnLook;
-        inputActions.Player.Attack.performed += OnAttack;
     }
 
     void OnDisable()
@@ -61,13 +45,11 @@ public class Player : MonoBehaviour
         inputActions.Disable();
         inputActions.Player.Jump.performed -= OnJump;
         inputActions.Player.Look.performed -= OnLook;
-        inputActions.Player.Attack.performed -= OnAttack;
     }
 
     void Start()
     {
         direction = Vector3.zero;
-        jumpCount = 0;
     }
 
     public void SetDirection(Vector3 newDirection)
@@ -79,13 +61,6 @@ public class Player : MonoBehaviour
     {
         Vector2 input = inputActions.Player.Move.ReadValue<Vector2>();
         SetDirection(new Vector3(input.x, 0.0f, input.y));
-
-        isGrounded = controller.isGrounded;
-        if (isGrounded && velocity.y < 0)
-        {
-            velocity.y = -2f; 
-            jumpCount = 0; 
-        }
 
         Move();
         ApplyGravityModifiers();
@@ -99,22 +74,21 @@ public class Player : MonoBehaviour
 
     private void OnJump(InputAction.CallbackContext context)
     {
-        if (jumpCount < 2)
+        if (controller.isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
-            jumpCount++;
         }
     }
 
     private void ApplyGravityModifiers()
     {
-        if (velocity.y < 0)
+        if (controller.isGrounded && velocity.y < 0)
         {
-            velocity += Vector3.up * gravity * (fallMultiplier - 1) * Time.deltaTime;
+            velocity.y = -2f;
         }
-        else if (velocity.y > 0 && !inputActions.Player.Jump.IsPressed())
+        else
         {
-            velocity += Vector3.up * gravity * (lowJumpMultiplier - 1) * Time.deltaTime;
+            velocity.y += gravity * Time.deltaTime; // gravity overtime
         }
 
         controller.Move(velocity * Time.deltaTime);
@@ -133,48 +107,9 @@ public class Player : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
     }
 
-    private void OnAttack(InputAction.CallbackContext context)
+    public void Die()
     {
-        if (canAttack)
-        {
-            StartCoroutine(PerformAttack());
-        }
-    }
-
-    private IEnumerator PerformAttack()
-    {
-        if (animator != null)
-        {
-            animator.SetTrigger("Attack");
-        }
-
-        canAttack = false;
-        Debug.Log("Player attacking...");
-
-        RaycastHit[] hits = Physics.SphereCastAll(transform.position, attackRange, transform.forward, attackRange);
-
-        foreach (RaycastHit hit in hits)
-        {
-            Enemy enemy = hit.collider.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.TakeDamage(attackDamage);
-                Debug.Log("Hit enemy: " + enemy.name);
-            }
-        }
-
-        yield return new WaitForSeconds(attackCooldown);
-        canAttack = true;
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position + transform.forward * attackRange, attackRange);
-    }
-
-    internal void TakeDamage(float damage)
-    {
-        health -= damage;
+        Debug.Log("Player Died!");
+        enabled = false;
     }
 }
