@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public Camera cam;
     public float sensitivity;
 
+    private Animator animator;
     private CharacterController controller;
     private Vector3 direction;
     private Vector3 velocity;
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
     {
         inputActions = new InputSystem_Actions();
         controller = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
         lockCursor();
     }
 
@@ -69,6 +71,16 @@ public class Player : MonoBehaviour
     private void Move()
     {
         Vector3 move = transform.right * direction.x + transform.forward * direction.z;
+
+        if (move.magnitude > 0)
+        {
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
+
         controller.Move(move * speed * Time.deltaTime);
     }
 
@@ -76,6 +88,7 @@ public class Player : MonoBehaviour
     {
         if (controller.isGrounded)
         {
+            animator.SetTrigger("Jump");
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
     }

@@ -129,14 +129,6 @@ MonoBehaviour:
   speed: 5
   jumpForce: 1
   gravity: -9.81
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
-  isGrounded: 0
-  jumpCount: 0
-  health: 100
-  attackRange: 1
-  attackDamage: 50
-  attackCooldown: 0.8
   cam: {fileID: 4450441809054062093}
   sensitivity: 10
 --- !u!1 &8529870554684515909
