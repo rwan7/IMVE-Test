@@ -5,82 +5,116 @@ using UnityEngine;
 public class EnemyPool : MonoBehaviour
 {
     public GameObject enemyPrefab;
+    public Transform player;
     public int poolSize = 100;
     
-    public Transform spawnAreaCenter; // The center of the spawn area
-    public Vector3 spawnAreaSize = new Vector3(10f, 0f, 10f); // The range (width, height, depth) of the spawn area
+    public Transform spawnAreaCenter; 
+    public Vector3 spawnAreaSize = new Vector3(10f, 0f, 10f);
+    public float minSpawnDistance = 3f;
+    private Vector3 nextSpawnPosition;
+    private bool isSpawning = false;
 
     private Queue<GameObject> enemyPool = new Queue<GameObject>();
+    private int activeEnemyCount = 0;  
+
+    public static EnemyPool Instance { get; private set; } 
+
+    void Awake()
+    {
+        Instance = this; 
+    }
+
+    void Update()
+    {
+        if (!isSpawning && UIManager.Instance.isAlive) 
+        {
+            StartCoroutine(SpawnEnemy());
+            isSpawning = true;
+        }
+    }
 
     void Start()
     {
-        // Initialize the pool with enemies
         for (int i = 0; i < poolSize; i++)
         {
             GameObject enemy = Instantiate(enemyPrefab);
-            enemy.SetActive(false); // Start as inactive
+            enemy.SetActive(false); 
             enemyPool.Enqueue(enemy);
         }
 
-        // Start spawning enemies every 5 seconds
-        StartCoroutine(SpawnEnemy());
+        UIManager.Instance.UpdateEnemyCounter(activeEnemyCount);
     }
 
-    // Get an enemy from the pool or expand the pool if empty
     private GameObject Activate()
     {
+        GameObject enemy;
         if (enemyPool.Count > 0)
         {
-            GameObject enemy = enemyPool.Dequeue();
-            enemy.SetActive(true);
-            return enemy;
+            enemy = enemyPool.Dequeue();
         }
         else
         {
-            // If pool is empty, instantiate a new enemy
-            GameObject enemy = Instantiate(enemyPrefab);
-            return enemy;
+            enemy = Instantiate(enemyPrefab);
         }
+        
+        enemy.SetActive(true);
+        activeEnemyCount++;  
+        UIManager.Instance.UpdateEnemyCounter(activeEnemyCount);
+
+        return enemy;
     }
 
-    // Deactivate enemy and return it to the pool
-    private void Deactivate(GameObject enemy)
+    public void Deactivate(GameObject enemy)
     {
         enemy.SetActive(false);
         enemyPool.Enqueue(enemy);
+        activeEnemyCount--;  
+        UIManager.Instance.UpdateEnemyCounter(activeEnemyCount);
     }
 
-    // Spawn an enemy every 5 seconds within the spawn area
     private IEnumerator SpawnEnemy()
     {
-        while (true)
+        Vector3 spawnPos = GetRandomPositionInArea();
+
+        if (Vector3.Distance(spawnPos, player.position) >= minSpawnDistance)
         {
-            yield return new WaitForSeconds(5f); // Wait for 5 seconds
-
             GameObject enemy = Activate();
-
-            // Get random position within the spawn area
-            Vector3 randomPosition = GetRandomPositionInArea();
-            enemy.transform.position = randomPosition; // Set the random position within the spawn area
-            enemy.transform.rotation = Quaternion.identity; // Reset rotation or add randomized rotation if needed
-
-            // Optional: Additional logic or spawn effects could go here (animations, etc.)
+            enemy.transform.position = spawnPos;
+            enemy.transform.rotation = Quaternion.identity;
         }
+            
+        yield return new WaitForSeconds(5f);
+        isSpawning = false;
     }
 
-    // Get a random position within the defined spawn area
+    internal void StopSpawning()
+    {
+        isSpawning = false;
+    }
+
     private Vector3 GetRandomPositionInArea()
     {
-        float randomX = Random.Range(spawnAreaCenter.position.x - spawnAreaSize.x / 2, spawnAreaCenter.position.x + spawnAreaSize.x / 2);
-        float randomY = spawnAreaCenter.position.y; // You can adjust this if you want to vary Y as well
-        float randomZ = Random.Range(spawnAreaCenter.position.z - spawnAreaSize.z / 2, spawnAreaCenter.position.z + spawnAreaSize.z / 2);
+        Vector3 randomPosition;
+        int maxAttempts = 10;  
+        int attempts = 0;
 
-        return new Vector3(randomX, randomY, randomZ);
+        do
+        {
+            float randomX = Random.Range(spawnAreaCenter.position.x - spawnAreaSize.x / 2, spawnAreaCenter.position.x + spawnAreaSize.x / 2);
+            float randomY = spawnAreaCenter.position.y; 
+            float randomZ = Random.Range(spawnAreaCenter.position.z - spawnAreaSize.z / 2, spawnAreaCenter.position.z + spawnAreaSize.z / 2);
+
+            randomPosition = new Vector3(randomX, randomY, randomZ);
+            attempts++;
+        }
+        while (Vector3.Distance(randomPosition, player.position) < minSpawnDistance && attempts < maxAttempts);
+
+        return randomPosition;
     }
 
     void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position, spawnAreaSize);
+        Gizmos.DrawWireCube(spawnAreaCenter.position, spawnAreaSize);
     }
 }

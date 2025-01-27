@@ -111,5 +111,6 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Player Died!");
         enabled = false;
+        UIManager.Instance.StopGame();
     }
 }
