@@ -10,8 +10,9 @@ public class Enemy : MonoBehaviour
     public float attackRange = 2f;
     public float attackCooldown = 1.5f;
     public float damage = 10f;
+    private bool isDead = false;
 
-    private enum EnemyState { Idle, Chasing, Attacking, Dying }
+    private enum EnemyState {Idle, Chasing, Attacking, Dying}
     private EnemyState currentState = EnemyState.Idle;
 
     private Transform player;
@@ -24,6 +25,7 @@ public class Enemy : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        agent.stoppingDistance = attackRange;
     }
 
     void Update()
@@ -42,42 +44,40 @@ public class Enemy : MonoBehaviour
             case EnemyState.Dying:
                 break;
         }
+    }
 
-        if (health <= 0 && currentState != EnemyState.Dying)
+    private void CheckState()
+    {
+        float distance = Vector3.Distance(transform.position, player.position);
+
+        if (distance <= attackRange)
         {
-            Die();
+            currentState = EnemyState.Attacking;
         }
+        else if (distance <= detectionRange)
+        {
+            currentState = EnemyState.Chasing;
+        }
+        else
+        {
+            currentState = EnemyState.Idle;
+        }   
     }
 
     private void Idle()
     {
-        animator.SetBool("IsWalking", false);
-        float distance = Vector3.Distance(transform.position, player.position);
-        
-        if (distance <= detectionRange)
-        {
-            currentState = EnemyState.Chasing;
-        }
-        else if (distance <= attackRange)
-        {
-            currentState = EnemyState.Attacking;
-        }
+        animator.SetBool("IsIdle", true);
+        animator.SetBool("IsWalking", false);   
+        CheckState();
     }
 
     private void Chase()
     {
         animator.SetBool("IsWalking", true);
+        animator.SetBool("IsIdle", false);
         agent.SetDestination(player.position);
 
-        float distance = Vector3.Distance(transform.position, player.position);
-        if (distance <= attackRange)
-        {
-            currentState = EnemyState.Attacking;
-        }
-        else if (distance > detectionRange)
-        {
-            currentState = EnemyState.Idle;
-        }
+        CheckState();
     }
 
     private void Attack()
@@ -85,70 +85,65 @@ public class Enemy : MonoBehaviour
         if (canAttack)
         {
             animator.SetTrigger("Attack");
-            animator.SetBool("IsWalking", false); // Ensure the enemy stays idle during attack
-            agent.SetDestination(transform.position);  // Stop moving
+            animator.SetBool("IsWalking", false);
 
             StartCoroutine(PerformAttack());
-        }
-
-        float distance = Vector3.Distance(transform.position, player.position);
-        if (distance > attackRange) // Only transition to chasing if the player is out of attack range
-        {
-            currentState = EnemyState.Chasing;
-        }
-        else if (distance <= attackRange && currentState != EnemyState.Attacking) // Remain idle if still in attack range
-        {
-            currentState = EnemyState.Attacking; // Stay in attacking state
-        }
+        }    
     }
-
 
     private IEnumerator PerformAttack()
     {
         canAttack = false;
-        Debug.Log("Enemy attacks player!");
 
         if (player.TryGetComponent(out Player playerScript))
         {
             playerScript.TakeDamage(damage);
         }
 
-        currentState = EnemyState.Idle;  
+        currentState = EnemyState.Idle;
+
         yield return new WaitForSeconds(attackCooldown);
-
         canAttack = true;
-    }   
+        agent.isStopped = false;
 
+        CheckState();
+    }   
 
     public void TakeDamage(float amount)
     {
+        if (isDead) return;
+
         health -= amount;
         Debug.Log("Enemy took damage. Current health: " + health);
 
         if (health <= 0)
-        {
-            Die();
+        { 
+            Die(); 
         }
     }
 
     private void Die()
     {
+        if (isDead) return;
+
+        isDead = true;
         currentState = EnemyState.Dying;
         animator.SetTrigger("Die");
         agent.isStopped = true;
         Debug.Log("Enemy died.");
+
         StartCoroutine(WaitAndDestroy());
     }
 
     private IEnumerator WaitAndDestroy()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(5f);
         Destroy(gameObject);
     }
 
-    void OnDrawGizmosSelected()
+    void OnDrawGizmosSelected() 
     {
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, detectionRange);
 
         Gizmos.color = Color.red;
