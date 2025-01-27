@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
 	public static AudioManager Instance { get; private set; }
 
     [Header("Audio Sources")]
-    [SerializeField] public AudioSource musicSource;
+    [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource SFXSource;
 
 	[Header("BGM List")]
@@ -22,30 +22,24 @@ public class AudioManager : MonoBehaviour
     public AudioClip pausedSound;
     public AudioClip gameOverSound;
 	
-	private void Awake()
-	{
-		if (Instance == null)
-		{
-			Instance = this;
-			DontDestroyOnLoad(gameObject); 
-		}
-		else
-		{
-			Destroy(gameObject);
-			return;
-		}
-	}
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); 
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 
     public void PlaySFX(AudioClip clip)
     {
+        if (!SFXSource.isPlaying || SFXSource.clip != clip)
         SFXSource.PlayOneShot(clip);
-    }
-
-    IEnumerator DelayWinSFX(AudioClip clip) {
-        SFXSource.PlayOneShot(clip);
-        musicSource.Pause();
-        yield return new WaitForSeconds(5f);
-        musicSource.Play();
     }
 
     public void PlayClickSFX() { PlaySFX(clickSound); }
@@ -76,7 +70,9 @@ public class AudioManager : MonoBehaviour
     public void PlayBGM(AudioClip clip)
     {
         if (musicSource.clip == clip) return;
+        musicSource.clip = clip;
         musicSource.loop = true; 
+        musicSource.Play();
     }
 
 	
