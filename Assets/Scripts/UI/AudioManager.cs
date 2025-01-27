@@ -36,6 +36,15 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void SetSoundEnabled(bool enabled)
+    {
+        SFXSource.mute = !enabled;
+    }
+
+    public void SetMusicEnabled(bool enabled)
+    {
+        musicSource.mute = !enabled;
+    }
 
     public void PlaySFX(AudioClip clip)
     {
