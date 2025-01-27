@@ -62,6 +62,7 @@ public class UIManager : MonoBehaviour
 
     public void PauseGame()
     {
+        AudioManager.Instance.PlayPausedSFX();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         inGameUI.SetActive(false);
@@ -73,6 +74,7 @@ public class UIManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        AudioManager.Instance.PlayClickSFX();
         inGameUI.SetActive(true);
         pauseUI.SetActive(false);
         Time.timeScale = 1;
@@ -80,12 +82,14 @@ public class UIManager : MonoBehaviour
 
     public void OpenSettings()
     {
+        AudioManager.Instance.PlayClickSFX();
         pauseUI.SetActive(false);
         settingsUI.SetActive(true);
     }
 
     public void BackButton()
     {
+        AudioManager.Instance.PlayClickSFX();
         pauseUI.SetActive(true);
         settingsUI.SetActive(false);
     }
@@ -100,6 +104,7 @@ public class UIManager : MonoBehaviour
 
     public void GameOver()
     {
+        AudioManager.Instance.PlayGameOverSFX();
         isAlive = false;
         EnemyPool.Instance.StopSpawning();
     }

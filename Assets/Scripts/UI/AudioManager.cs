@@ -7,20 +7,21 @@ public class AudioManager : MonoBehaviour
 	public static AudioManager Instance { get; private set; }
 
     [Header("Audio Sources")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
+    [SerializeField] public AudioSource musicSource;
+    [SerializeField] public AudioSource SFXSource;
 
 	[Header("BGM List")]
 	public AudioClip BgmMainMenu;
     public AudioClip BgmStage;
 	
-    [Header("Sound Effects")]
+    [Header("Sound Effects List")]
     public AudioClip walkingSound;
     public AudioClip jumpSound;
     public AudioClip enemyWalkSound;
     public AudioClip clickSound;
     public AudioClip pausedSound;
     public AudioClip gameOverSound;
+    public AudioClip enemyGrowlSound;
 	
     private void Awake()
     {
@@ -38,11 +39,16 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(AudioClip clip)
     {
-        if (!SFXSource.isPlaying || SFXSource.clip != clip)
         SFXSource.PlayOneShot(clip);
     }
 
     public void PlayClickSFX() { PlaySFX(clickSound); }
+    public void PlayPausedSFX() { PlaySFX(pausedSound); }
+    public void PlayGameOverSFX() { PlaySFX(gameOverSound); }
+    public void PlayEnemyGrowlSFX() { PlaySFX(enemyGrowlSound); }
+    public void PlayJumpSFX() { PlaySFX(jumpSound); }
+    public void PlayWalkingSFX() { PlayLoopingSFX(walkingSound); }
+    public void PlayEnemyWalkSFX() { PlayLoopingSFX(enemyWalkSound); }
 	
 	void OnEnable()
     {
@@ -81,12 +87,14 @@ public class AudioManager : MonoBehaviour
 		SFXSource.Stop();
 	}
 	
-	public void PlayLoopingSFX(AudioClip clip)
-	{
-		SFXSource.loop = true;
-		SFXSource.clip = clip;
-		SFXSource.Play();
-	}
+    public void PlayLoopingSFX(AudioClip clip)
+    {
+        if (SFXSource.clip == clip && SFXSource.isPlaying) return;
+        SFXSource.loop = true;
+        SFXSource.clip = clip;
+        SFXSource.Play();
+    }
+
 
 	public void StopLoopingSFX()
 	{
