@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +11,9 @@ public class Player : MonoBehaviour
     [Header("Camera")]
     public Camera cam;
     public float sensitivity;
+
+    private bool isDead = false;
+
 
     private Animator animator;
     private CharacterController controller;
@@ -75,6 +76,7 @@ public class Player : MonoBehaviour
         if (move.magnitude > 0)
         {
             animator.SetBool("IsWalking", true);
+            AudioManager.Instance.PlayWalkingSFX();
         }
         else
         {
@@ -89,6 +91,7 @@ public class Player : MonoBehaviour
         if (controller.isGrounded)
         {
             animator.SetTrigger("Jump");
+            AudioManager.Instance.PlayJumpSFX();
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
     }
@@ -122,6 +125,9 @@ public class Player : MonoBehaviour
 
     public void Die()
     {
+        if (isDead) return;
+
+        isDead = true;
         Debug.Log("Player Died!");
         enabled = false;
         UIManager.Instance.GameOver();

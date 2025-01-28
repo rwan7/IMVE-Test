@@ -14,7 +14,6 @@ public class SaveManager
     {
         float highestTime = LoadHighestTimeSurvived();
 
-        // Check if the current timeSurvived is greater than the highest recorded time.
         if (timeSurvived > highestTime)
         {
             highestTime = timeSurvived;
@@ -48,7 +47,7 @@ public class SaveManager
     }
 
     [System.Serializable]
-    private class SaveData
+    public class SaveData
     {
         public float TimeSurvived;
         public float HighestTimeSurvived;

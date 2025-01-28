@@ -1,19 +1,22 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static SaveManager;
 
 public class AudioManager : MonoBehaviour
 {
-	public static AudioManager Instance { get; private set; }
+    public static AudioManager Instance { get; private set; }
 
     [Header("Audio Sources")]
     [SerializeField] public AudioSource musicSource;
-    [SerializeField] public AudioSource SFXSource;
+    [SerializeField] private AudioSource UISFXSource;
+    [SerializeField] private AudioSource playerSFXSource;
+    [SerializeField] private AudioSource enemySFXSource;
 
-	[Header("BGM List")]
-	public AudioClip BgmMainMenu;
+    [Header("BGM List")]
+    public AudioClip BgmMainMenu;
     public AudioClip BgmStage;
-	
+
     [Header("Sound Effects List")]
     public AudioClip walkingSound;
     public AudioClip jumpSound;
@@ -21,23 +24,32 @@ public class AudioManager : MonoBehaviour
     public AudioClip clickSound;
     public AudioClip pausedSound;
     public AudioClip gameOverSound;
-	
+
+    private SaveManager saveManager;
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
+            saveManager = new SaveManager();
         }
         else if (Instance != this)
         {
             Destroy(gameObject);
         }
     }
+    // private void Start()
+    // {
+    //     LoadAudioSettings();
+    // }
 
     public void SetSoundEnabled(bool enabled)
     {
-        SFXSource.mute = !enabled;
+        UISFXSource.mute = !enabled;
+        playerSFXSource.mute = !enabled;
+        enemySFXSource.mute = !enabled;
     }
 
     public void SetMusicEnabled(bool enabled)
@@ -45,34 +57,41 @@ public class AudioManager : MonoBehaviour
         musicSource.mute = !enabled;
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlayUISFX(AudioClip clip)
     {
-        SFXSource.PlayOneShot(clip);
+        UISFXSource.PlayOneShot(clip);
     }
 
-    public void PlayClickSFX() { PlaySFX(clickSound); }
-    public void PlayPausedSFX() { PlaySFX(pausedSound); }
-    public void PlayGameOverSFX() { PlaySFX(gameOverSound); }
-    public void PlayJumpSFX() { PlaySFX(jumpSound); }
-    public void PlayWalkingSFX() { PlayLoopingSFX(walkingSound); }
-    public void PlayEnemyWalkSFX() { PlayLoopingSFX(enemyWalkSound); }
-	
-	void OnEnable()
+    public void PlayPlayerSFX(AudioClip clip)
+    {
+        playerSFXSource.PlayOneShot(clip);
+    }
+
+    public void PlayEnemySFX(AudioClip clip)
+    {
+        enemySFXSource.PlayOneShot(clip);
+    }
+
+    public void PlayClickSFX() { PlayUISFX(clickSound); }
+    public void PlayPausedSFX() { PlayUISFX(pausedSound); }
+    public void PlayGameOverSFX() { PlayUISFX(gameOverSound); }
+    public void PlayJumpSFX() { PlayPlayerSFX(jumpSound); }
+    public void PlayWalkingSFX() { PlayLoopingSFX(playerSFXSource, walkingSound); }
+    public void PlayEnemyWalkSFX() { PlayLoopingSFX(enemySFXSource, enemyWalkSound); }
+
+    private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-            if (AudioManager.Instance.SFXSource.clip == AudioManager.Instance.enemyWalkSound && AudioManager.Instance.SFXSource.isPlaying)
-    {
-        AudioManager.Instance.StopLoopingSFX();
-    }
+        StopAllSounds();
         switch (scene.name)
         {
             case "Main Menu":
@@ -88,29 +107,76 @@ public class AudioManager : MonoBehaviour
     {
         if (musicSource.clip == clip) return;
         musicSource.clip = clip;
-        musicSource.loop = true; 
+        musicSource.loop = true;
         musicSource.Play();
     }
-	
-	public void StopSFX()
-	{
-		SFXSource.Stop();
-	}
-	
-    public void PlayLoopingSFX(AudioClip clip)
+
+    public void PlayLoopingSFX(AudioSource source, AudioClip clip)
     {
-        if (SFXSource.clip == clip && SFXSource.isPlaying) return;
-        SFXSource.loop = true;
-        SFXSource.clip = clip;
-        SFXSource.Play();
+        if (source.clip == clip && source.isPlaying) return;
+        source.loop = true;
+        source.clip = clip;
+        source.Play();
     }
 
-	public void StopLoopingSFX()
-	{
-        if (SFXSource.isPlaying && SFXSource.loop)
+    public void StopLoopingSFX(AudioSource source = null)
+    {
+        if (source == null)
         {
-            SFXSource.loop = false;
-            SFXSource.Stop();
+            if (playerSFXSource.isPlaying && playerSFXSource.loop)
+            {
+                playerSFXSource.loop = false;
+                playerSFXSource.Stop();
+            }
+            
+            if (enemySFXSource.isPlaying && enemySFXSource.loop)
+            {
+                enemySFXSource.loop = false;
+                enemySFXSource.Stop();
+            }
         }
-	}
+        else
+        {
+            if (source.isPlaying && source.loop)
+            {
+                source.loop = false;
+                source.Stop();
+            }
+        }
+    }
+
+    public void StopAllSounds()
+    {
+        if (musicSource.isPlaying)
+        {
+            musicSource.Stop();
+        }
+
+        if (UISFXSource.isPlaying)
+        {
+            UISFXSource.Stop();
+        }
+
+        if (playerSFXSource.isPlaying)
+        {
+            playerSFXSource.Stop();
+        }
+
+        if (enemySFXSource.isPlaying)
+        {
+            enemySFXSource.Stop();
+        }
+    }
+
+    // public void OnSoundEffectsToggleChanged(bool isEnabled)
+    // {
+    //     SetSoundEnabled(isEnabled);
+    // }
+
+    // public void LoadAudioSettings()
+    // {
+    //     SaveData data = saveManager.LoadData(); 
+    //     SetMusicEnabled(data.MusicEnabled);
+    //     SetSoundEnabled(data.SoundEffectsEnabled);
+    // }
 }

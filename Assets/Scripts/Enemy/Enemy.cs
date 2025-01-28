@@ -11,14 +11,18 @@ public class Enemy : MonoBehaviour
     private Transform player;
     private NavMeshAgent agent;
     private Animator animator;
+    private Player playerScript;
+
 
     private bool isChasing = false;
+    private bool isPlayingWalkSFX = false;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        playerScript = player.GetComponent<Player>();
     }
 
     void Update()
@@ -28,40 +32,56 @@ public class Enemy : MonoBehaviour
 
     private void CheckState()
     {
-        float distance = Vector3.Distance(transform.position, player.position);
+        if (playerScript == null || playerScript.enabled == false) // to check if player is dead
+        {
+            StopChasing(); 
+            return;
+        }
 
-        if (distance <= detectionRange)
+        float sqrDistance = (player.position - transform.position).sqrMagnitude;
+        float detectionRangeSqr = detectionRange * detectionRange;
+
+        if (sqrDistance <= detectionRangeSqr)
         {
             if (!isChasing)
             {
                 isChasing = true;
+                agent.speed = chaseSpeed;
             }
+
+            ChasePlayer();
         }
         else
         {
-            isChasing = false;
+            StopChasing();
         }
+    }
 
-        if (isChasing)
+    private void ChasePlayer()
+    {
+        agent.SetDestination(player.position);
+        animator.SetBool("IsWalking", true);
+
+        if (!isPlayingWalkSFX)
         {
-            agent.SetDestination(player.position);
-            animator.SetBool("IsWalking", true);
-
-            if (agent.velocity.magnitude > 0.1f) 
-            {
-                AudioManager.Instance.PlayEnemyWalkSFX(); 
-            }
+            Debug.Log("Playing enemy walk sound");
+            AudioManager.Instance.PlayEnemyWalkSFX();
+            isPlayingWalkSFX = true;
         }
-        else
+    }
+
+    private void StopChasing()
+    {
+        isChasing = false;
+        animator.SetBool("IsWalking", false);
+
+        if (isPlayingWalkSFX)
         {
-            animator.SetBool("IsWalking", false);
-            if (AudioManager.Instance.SFXSource.isPlaying && AudioManager.Instance.SFXSource.clip == AudioManager.Instance.enemyWalkSound)
-            {
-                AudioManager.Instance.StopLoopingSFX();
-            }
+            Debug.Log("Stopping enemy walk sound");
+            AudioManager.Instance.StopLoopingSFX();
+            isPlayingWalkSFX = false;
         }
-    }                            
-
+    }
 
     void OnTriggerEnter(Collider col)
     {
@@ -69,7 +89,7 @@ public class Enemy : MonoBehaviour
         {
             if (col.TryGetComponent(out Player playerScript))
             {
-                playerScript.Die(); 
+                playerScript.Die();
             }
         }
     }
@@ -77,7 +97,6 @@ public class Enemy : MonoBehaviour
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, detectionRange);  
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 }
-
