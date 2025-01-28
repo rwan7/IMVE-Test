@@ -14,7 +14,6 @@ public class Player : MonoBehaviour
 
     private bool isDead = false;
 
-
     private Animator animator;
     private CharacterController controller;
     private Vector3 direction;
