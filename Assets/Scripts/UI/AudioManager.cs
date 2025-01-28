@@ -1,7 +1,5 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static SaveManager;
 
 public class AudioManager : MonoBehaviour
 {
@@ -40,10 +38,6 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    // private void Start()
-    // {
-    //     LoadAudioSettings();
-    // }
 
     public void SetSoundEnabled(bool enabled)
     {
@@ -167,16 +161,4 @@ public class AudioManager : MonoBehaviour
             enemySFXSource.Stop();
         }
     }
-
-    // public void OnSoundEffectsToggleChanged(bool isEnabled)
-    // {
-    //     SetSoundEnabled(isEnabled);
-    // }
-
-    // public void LoadAudioSettings()
-    // {
-    //     SaveData data = saveManager.LoadData(); 
-    //     SetMusicEnabled(data.MusicEnabled);
-    //     SetSoundEnabled(data.SoundEffectsEnabled);
-    // }
 }
