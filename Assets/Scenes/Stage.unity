@@ -495,7 +495,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -557,7 +558,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -618,7 +620,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -679,7 +682,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -740,7 +744,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -797,7 +802,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -858,7 +864,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -919,7 +926,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -985,7 +993,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1067,7 +1076,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1128,7 +1138,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1260,7 +1271,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1317,7 +1329,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1398,7 +1411,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1596,7 +1610,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1818,7 +1833,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1890,7 +1906,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2203,7 +2220,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2279,7 +2297,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2336,7 +2355,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2412,7 +2432,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2469,7 +2490,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2530,7 +2552,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2601,7 +2624,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2662,7 +2686,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2719,7 +2744,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2776,7 +2802,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2833,7 +2860,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2894,7 +2922,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3040,7 +3069,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3177,7 +3207,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3234,7 +3265,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3422,7 +3454,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3488,7 +3521,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3555,7 +3589,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3622,7 +3657,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3832,7 +3868,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3889,7 +3926,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3946,7 +3984,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4003,7 +4042,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4064,7 +4104,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4131,7 +4172,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4346,7 +4388,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4407,7 +4450,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4478,7 +4522,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4544,7 +4589,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4605,7 +4651,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4662,7 +4709,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4862,7 +4910,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4928,7 +4977,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4994,7 +5044,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5055,7 +5106,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5112,7 +5164,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5173,7 +5226,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5239,7 +5293,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5305,7 +5360,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5362,7 +5418,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5428,7 +5485,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5490,7 +5548,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5582,7 +5641,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5639,7 +5699,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5700,7 +5761,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5781,7 +5843,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6223,7 +6286,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6514,7 +6578,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6580,7 +6645,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6646,7 +6712,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6712,7 +6779,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6774,7 +6842,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -6920,7 +6989,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7026,7 +7096,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7087,7 +7158,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7148,7 +7220,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7209,7 +7282,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7290,7 +7364,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7351,7 +7426,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7413,7 +7489,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7509,7 +7586,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7829,7 +7907,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7895,7 +7974,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7956,7 +8036,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8018,7 +8099,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8084,7 +8166,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8141,7 +8224,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8207,7 +8291,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8279,7 +8364,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8345,7 +8431,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8406,7 +8493,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8468,7 +8556,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8534,7 +8623,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8596,7 +8686,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8657,7 +8748,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8723,7 +8815,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8894,7 +8987,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8960,7 +9054,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9031,7 +9126,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9092,7 +9188,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9153,7 +9250,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9214,7 +9312,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9275,7 +9374,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9407,7 +9507,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9498,7 +9599,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9559,7 +9661,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9700,7 +9803,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9757,7 +9861,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9814,7 +9919,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9875,7 +9981,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9936,7 +10043,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10007,7 +10115,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6202998610970718374, guid: a8ad31da5d47353469f82df604821ab0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10068,7 +10177,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10125,7 +10235,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10410,7 +10521,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10471,7 +10583,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10528,7 +10641,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10585,7 +10699,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10646,7 +10761,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10703,7 +10819,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9196574404032878226, guid: 1211a8a70ccbf8941b4f049e54df814a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10775,7 +10892,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10841,7 +10959,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10917,7 +11036,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -10978,7 +11098,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11176,7 +11297,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11233,7 +11355,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9196574404032878226, guid: 1211a8a70ccbf8941b4f049e54df814a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11435,7 +11558,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11501,7 +11625,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11563,7 +11688,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11629,7 +11755,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11691,7 +11818,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11899,7 +12027,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11961,7 +12090,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12018,7 +12148,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12084,7 +12215,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12542,7 +12674,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12603,7 +12736,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12675,7 +12809,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12746,7 +12881,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12812,7 +12948,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12873,7 +13010,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12944,7 +13082,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13020,7 +13159,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13082,7 +13222,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13275,7 +13416,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13346,7 +13488,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6202998610970718374, guid: a8ad31da5d47353469f82df604821ab0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13412,7 +13555,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6202998610970718374, guid: a8ad31da5d47353469f82df604821ab0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13473,7 +13617,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13530,7 +13675,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13591,7 +13737,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13648,7 +13795,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13709,7 +13857,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13766,7 +13915,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13827,7 +13977,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14016,7 +14167,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14087,7 +14239,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14144,7 +14297,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14317,7 +14471,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14383,7 +14538,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14445,7 +14601,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14512,7 +14669,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9196574404032878226, guid: 1211a8a70ccbf8941b4f049e54df814a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14573,7 +14731,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14634,7 +14793,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14691,7 +14851,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14757,7 +14918,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14818,7 +14980,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14879,7 +15042,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14940,7 +15104,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15001,7 +15166,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15072,7 +15238,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15153,7 +15320,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15215,7 +15383,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15272,7 +15441,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15471,7 +15641,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15532,7 +15703,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15608,7 +15780,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15804,7 +15977,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15870,7 +16044,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15941,7 +16116,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16002,7 +16178,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16073,7 +16250,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16245,7 +16423,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16306,7 +16485,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16363,7 +16543,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16434,7 +16615,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16505,7 +16687,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16566,7 +16749,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16628,7 +16812,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16685,7 +16870,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17027,7 +17213,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17093,7 +17280,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17159,7 +17347,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17225,7 +17414,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8919125926437822246, guid: 3f24c80895a77fa4bba15f9bd599a41b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17286,7 +17476,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17493,7 +17684,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17554,7 +17746,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17630,7 +17823,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17692,7 +17886,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17763,7 +17958,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17940,7 +18136,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -17997,7 +18194,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18058,7 +18256,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6202998610970718374, guid: a8ad31da5d47353469f82df604821ab0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18119,7 +18318,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18181,7 +18381,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18258,7 +18459,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18319,7 +18521,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handrail_A (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8524157831194413694, guid: c263196d056623347a616f73dc3ddb5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18380,7 +18583,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18441,7 +18645,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18498,7 +18703,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7134177499380788228, guid: 388d9b17ab21db24abe453cf6da856ae, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18555,7 +18761,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18616,7 +18823,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5385535156255332120, guid: e8677bde30e06f341b0e897430988f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18673,7 +18881,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18730,7 +18939,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18787,7 +18997,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_B
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3468961370329090012, guid: d2670d0ea7d6e7f4cb7e6be1a5541d46, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18849,7 +19060,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18906,7 +19118,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18967,7 +19180,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19028,7 +19242,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19110,7 +19325,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19172,7 +19388,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19239,7 +19456,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_C (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3530619402199406091, guid: 0e2a0f88f62841f42ae86ae323be43bf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19300,7 +19518,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6982516765756107749, guid: a55e8b944b49e774899ecb13192840e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19361,7 +19580,8 @@ PrefabInstance:
       propertyPath: tileOffset.y
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4889637347035195466, guid: f96442df40a0bf74bbd6431cf2ee05d9, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19423,7 +19643,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -9196574404032878226, guid: 1211a8a70ccbf8941b4f049e54df814a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -19485,7 +19706,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_B (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3030595782067531031, guid: f866648d31fd9494093daef232970acf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
